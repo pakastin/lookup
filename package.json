@@ -1,0 +1,21 @@
+{
+  "name": "@pakastin/lookup",
+  "version": "0.0.1",
+  "description": "",
+  "jsnext:main": "index.js",
+  "main": "dist/lookup.js",
+  "scripts": {
+    "dev": "node watch",
+    "build": "npm run test && rollup -n lookup -f umd index.js -o dist/lookup.js",
+    "uglify": "uglifyjs dist/lookup.js -o dist/lookup.min.js",
+    "test": "rollup -n lookup -f cjs index.js -o test/lookup.js && tape test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pakastin/watch": "0.0.2",
+    "rollup": "~0.33.0",
+    "tape": "~4.6.0",
+    "uglifyjs": "~2.4.10"
+  }
+}
