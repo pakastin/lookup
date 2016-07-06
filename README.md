@@ -29,4 +29,5 @@ console.log(userLevelLookup[1]) // --> [ {_id: 1, level: 1, name: 'A' }, { _id: 
 
 ```js
 var lookup = require('@pakastin/lookup');
+...
 ```
