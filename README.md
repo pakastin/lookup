@@ -6,7 +6,13 @@ create lookup tables easily
 npm install @pakastin/lookup
 ```
 
+## lookup(items, key, [reverse])
+- items(Array): items to iterate
+- key(String): which key value to use for lookup
+- reverse(Boolean): is there multiple items / key value?
+
 ## usage
+
 ```js
 import lookup from '@pakastin/lookup';
 
