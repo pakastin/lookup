@@ -1,5 +1,3 @@
-'use strict';
-
 var index = function (items, key, reverse) {
   var lookup = {};
 
@@ -18,4 +16,4 @@ var index = function (items, key, reverse) {
   return lookup;
 };
 
-module.exports = index;
+export default index;

@@ -1,10 +1,10 @@
 
-export default function (items, key, reverse) {
-  var lookup = {};
+export default (items, key, reverse) => {
+  const lookup = {};
 
-  for (var i = 0; i < items.length; i++) {
-    var item = items[i];
-    var value = item[key];
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const value = item[key];
 
     if (reverse) {
       lookup[value] || (lookup[value] = []);
@@ -15,4 +15,4 @@ export default function (items, key, reverse) {
   }
 
   return lookup;
-}
+};

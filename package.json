@@ -6,16 +6,17 @@
   "main": "dist/lookup.js",
   "scripts": {
     "dev": "node watch",
-    "build": "npm run test && rollup -n lookup -f umd index.js -o dist/lookup.js",
+    "build": "npm run test && rollup -c -n lookup -f umd index.js -o dist/lookup.js && rollup -c -n lookup -f es index.js -o dist/lookup.es.js",
     "uglify": "uglifyjs dist/lookup.js -o dist/lookup.min.js",
-    "test": "rollup -n lookup -f cjs index.js -o test/lookup.js && tape test"
+    "test": "rollup -c -n lookup -f cjs index.js -o test/lookup.js && tape test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@pakastin/watch": "0.0.2",
-    "rollup": "~0.33.0",
-    "tape": "~4.6.0",
+    "rollup": "~0.41.4",
+    "rollup-plugin-buble": "~0.15.0",
+    "tape": "~4.6.3",
     "uglifyjs": "~2.4.10"
   }
 }
