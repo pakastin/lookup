@@ -8,7 +8,7 @@ npm install @pakastin/lookup
 
 - production (UMD): https://pakastin.github.io/lookup/lookup.min.js
 - ES2015 module: https://pakastin.github.io/lookup/lookup.es.js
-- development: https://pakastin.github.io/lookup/lookup.js
+- development (UMD): https://pakastin.github.io/lookup/lookup.js
 
 ## lookup(items, key, [reverse])
 - items(Array): items to iterate
