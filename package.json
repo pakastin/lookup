@@ -1,6 +1,6 @@
 {
   "name": "@pakastin/lookup",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "jsnext:main": "index.js",
   "main": "dist/lookup.js",
