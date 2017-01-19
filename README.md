@@ -33,9 +33,11 @@ const lookup = require('@pakastin/lookup');
 ```
 
 ## oldskool:
+```html
 <script src="https://pakastin.github.io/lookup/lookup.min.js"></script>
 <script>
 ...
 const userLookup = lookup(users, '_id');
 ...
 </script>
+```
