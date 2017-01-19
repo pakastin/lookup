@@ -6,14 +6,18 @@
   "main": "dist/lookup.js",
   "scripts": {
     "dev": "node watch",
+    "dist": "gh-pages -d dist",
     "build": "npm run test && rollup -c -n lookup -f umd index.js -o dist/lookup.js && rollup -c -n lookup -f es index.js -o dist/lookup.es.js",
     "uglify": "uglifyjs dist/lookup.js -o dist/lookup.min.js",
+    "postversion": "git push --tags",
+    "postpublish": "npm run dist",
     "test": "rollup -c -n lookup -f cjs index.js -o test/lookup.js && tape test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@pakastin/watch": "0.0.2",
+    "gh-pages": "~0.12.0",
     "rollup": "~0.41.4",
     "rollup-plugin-buble": "~0.15.0",
     "tape": "~4.6.3",
