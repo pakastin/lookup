@@ -2,7 +2,8 @@
   "name": "@pakastin/lookup",
   "version": "0.1.0",
   "description": "",
-  "jsnext:main": "index.js",
+  "module": "dist/lookup.es.js",
+  "jsnext:main": "dist/lookup.es.js",
   "main": "dist/lookup.js",
   "scripts": {
     "dev": "node watch",
